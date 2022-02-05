@@ -52,5 +52,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.onError().observe(this) {
             Toast.makeText(this, it.msg, Toast.LENGTH_LONG).show()
         }
+        reportFullyDrawn()
     }
 }
